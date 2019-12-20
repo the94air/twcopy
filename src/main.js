@@ -1,8 +1,20 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App';
+import WebFont from 'webfontloader';
+import VueClipboard from 'vue-clipboard2';
 
-Vue.config.productionTip = false
+WebFont.load({
+  custom: {
+    families: [ 'Inter:n4,n7' ],
+    urls: ['/fonts/fonts.css']
+  }
+});
+
+Vue.use(VueClipboard);
+
+Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+})
+.$mount('#app');
