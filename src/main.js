@@ -3,10 +3,12 @@ import App from './App';
 import WebFont from 'webfontloader';
 import VueClipboard from 'vue-clipboard2';
 
+let font = process.env.NODE_ENV === 'production' ? 'twcopy/fonts/fonts.css' : 'fonts/fonts.css';
+
 WebFont.load({
   custom: {
     families: [ 'Inter:n4,n7' ],
-    urls: ['/fonts/fonts.css']
+    urls: [font]
   }
 });
 
