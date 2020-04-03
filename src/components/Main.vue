@@ -12,6 +12,12 @@
         <Shadows class="mb-20 last:mb-0" :class="key == 'inner' ? 'bg-white p-2 md:p-4 pt-5 rounded-lg' : ''" v-for="(shadow, key, index) in config.boxShadow" :key="'shadow-' + index" :title="key" :shadow="shadow" />
       </div>
     </div>
+    <div class="py-24">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl mb-6">Font size</h2>
+        <font-sizes class="mb-20 last:mb-0" v-for="(fontSize, key, index) in config.fontSize" :key="'font-size-' + index" :title="key" :class-name="key" :fontSize="fontSize" />
+      </div>
+    </div>
   </main>
 </template>
 
@@ -19,6 +25,7 @@
 import config from '@/config';
 import Colors from '@/components/Colors';
 import Shadows from '@/components/Shadows';
+import FontSizes from "@/components/FontSizes";
 
 export default {
   data() {
@@ -26,7 +33,7 @@ export default {
       config: config
     }
   },
-  components: { Colors, Shadows }
+  components: {FontSizes, Colors, Shadows }
 }
 </script>
 
