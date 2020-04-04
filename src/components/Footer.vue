@@ -2,8 +2,7 @@
   <footer>
     <div class="container mx-auto">
       <div class="text-center py-20">
-        <p class="mb-4">&copy; twcopy {{ date }}</p>
-        <a target="_blank" href="https://twitter.com/abdalla__arbab" class="text-sm no-underline uppercase font-bold text-blue-500 hover:text-blue-600 focus:text-blue-600">Twitter</a>
+        <p class="mb-4">&copy; <a target="_blank" class="text-sm no-underline text-blue-500 hover:text-blue-600 focus:text-blue-600" href="https://twitter.com/abdalla__arbab">Abdalla Arbab</a> {{ date }}</p>
       </div>
     </div>
   </footer>
