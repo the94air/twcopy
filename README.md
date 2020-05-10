@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/images/twcopy.svg?sanitize=true" alt="Empathy" title="Empathy" height="100" />
+  <img src="src/images/twcopy.svg?sanitize=true" alt="Tailwind Copy" title="Tailwind Copy" height="100" />
 </p>
 
 <p align="center">
