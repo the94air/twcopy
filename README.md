@@ -23,9 +23,9 @@ You can contribute and add your own favorite feature to the tool by opening a ne
 
 ## Project setup
 ```
-git clone https://github.com/the94air/twcopy.git
-npm install
-npm run serve
+$ git clone https://github.com/the94air/twcopy.git
+$ npm install
+$ npm run serve
 ```
 
 ## License
