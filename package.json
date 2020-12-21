@@ -1,50 +1,26 @@
 {
-  "name": "twcopy",
-  "version": "0.1.0",
+  "name": "twcopy-v2",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^3.7.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.0",
-    "tailwindcss": "^1.4.4",
-    "vue": "^2.6.12",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
     "vue-clipboard2": "^0.3.1",
-    "webfontloader": "^1.6.28",
-    "snyk": "^1.425.4"
+    "vue-smooth-scroll": "^1.0.13"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.1.0",
-    "@vue/cli-plugin-eslint": "^4.1.0",
-    "@vue/cli-service": "^4.1.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "snyk": true
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "autoprefixer": "^9.8.6",
+    "fibers": "^5.0.0",
+    "postcss": "^7.0.35",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+  }
 }

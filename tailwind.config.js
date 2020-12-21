@@ -1,8 +1,16 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: [],
   theme: {
     fontFamily: {
       sans: [
         'Inter',
+        'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
@@ -16,27 +24,12 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: [
-        'Inter',
-        'Georgia',
-        'Cambria',
-        '"Times New Roman"',
-        'Times',
-        'serif',
-      ],
-      mono: [
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        '"Liberation Mono"',
-        '"Courier New"',
-        'monospace',
-      ],
+      serif: ['Inter', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
-    extend: {}
+    colors: colors,
+    extend: {},
   },
-  variants: {
-    margin: ['responsive', 'last'],
-  },
-  plugins: []
+  variants: {},
+  plugins: [],
 }
