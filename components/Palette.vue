@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-start w-full mb-6">
+  <div class="flex flex-wrap justify-between items-start w-full mb-6">
     <div class="w-full lg:w-1/5 mt-3">
       <h3 class="text-base font-medium">{{ getGroupName }}</h3>
     </div>
