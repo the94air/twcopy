@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="block font-medium text-blueGray-500 text-xs mb-1">
-      {{ colorName }}
+      <span :class="$store.state.color.lastColor == uppercaseColor ? 'ring-blueGray-400 ring-opacity-75 ring-2 ring-offset-1 rounded-sm' : ''">{{ colorName }}</span>
     </p>
     <p
       class="block font-medium text-xs uppercase transition-colors duration-75 ease-linear mb-1"
@@ -46,6 +46,9 @@ export default {
     onCopy() {
       let self = this;
       this.copied = true;
+
+      this.$store.commit('color/addColor', this.uppercaseColor);
+
       setTimeout(function () {
         self.copied = false;
       }, 250);
