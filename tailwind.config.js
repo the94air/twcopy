@@ -30,6 +30,8 @@ module.exports = {
     colors: colors,
     extend: {},
   },
-  variants: {},
+  variants: {
+    margin: ['responsive', 'last'],
+  },
   plugins: [],
 }
