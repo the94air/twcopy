@@ -14,6 +14,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap' },
+    ],
+    script: [
+      { async: true, defer: true, "data-website-id": 'e3cbc2ab-1038-4bba-8d60-639b8e7e631d', src: 'https://analytics.work.sd/umami.js' }
     ]
   },
 
