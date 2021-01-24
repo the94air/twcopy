@@ -3,7 +3,7 @@
     <div class="flex flex-wrap -mx-4 xl:-mx-8">
       <aside class="hidden lg:block w-full lg:w-1/4 px-4 xl:px-8">
         <div class="sticky top-0 h-auto">
-          <div class="flex flex-col justify-between h-screen pt-24">
+          <div class="flex flex-col justify-between h-screen pt-16 2xl:pt-24 lg:ml-8 xl:ml-0">
             <div>
               <div class="mb-6">
                 <h1 class="mb-6 text-4xl">Tailwind Copy</h1>
@@ -41,7 +41,7 @@
                   </li>
                 </ul>
               </div>
-              <footer class="mb-24">
+              <footer class="mb-16 2xl:mb-24">
                 <div class="flex items-center mb-3">
                   <a target="_blank" href="https://github.com/the94air/twcopy" class="inline-block align-middle text-black hover:text-black focus:text-black mr-2" tabindex="-1">
                     <span class="block">
