@@ -1,4 +1,6 @@
-# twcopy-v2
+# Tailwind Copy
+Easily copy Tailwindcss colors and shadows  
+Useful for doing design or front-end work.
 
 ## Build Setup
 
@@ -17,4 +19,5 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## License
+[MIT](https://github.com/the94air/twcopy/blob/main/LICENSE) Copyright (c) Abdalla Arbab
