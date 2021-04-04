@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto px-4 md:px-8">
     <div class="flex flex-wrap -mx-4 xl:-mx-8">
       <aside class="hidden lg:block w-full lg:w-1/4 px-4 xl:px-8">
         <div class="sticky top-0 h-auto">

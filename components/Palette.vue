@@ -3,9 +3,11 @@
     <div class="w-full lg:w-1/5 mt-3">
       <h3 class="text-base font-medium">{{ getGroupName }}</h3>
     </div>
-    <div class="w-full lg:w-4/5 flex -mx-2">
-      <div v-for="(color, index) in groupColors" :key="index" class="w-full px-2">
-        <Color :colorName="index" :color="color" />
+    <div class="w-full lg:w-4/5 -mx-2">
+      <div class="flex flex-wrap md:flex-nowrap">
+        <div v-for="(color, index) in groupColors" :key="index" class="w-full px-2">
+          <Color :colorName="index" :color="color" />
+        </div>
       </div>
     </div>
   </div>
