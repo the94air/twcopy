@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^3.10.1",
+    "core-js": "^3.10.2",
     "nuxt": "^2.14.6",
     "vue-clipboard2": "^0.3.1",
     "vue-smooth-scroll": "^1.0.13"
