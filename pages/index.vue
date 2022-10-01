@@ -116,7 +116,7 @@ export default {
   },
   computed: {
     getConfigs() {
-      return this.configs[`v${this.version}`]; // this.version === 1 ? this.configs.v1 : this.configs.v2;
+      return this.configs[`v${this.version}`];
     },
     date() {
       return new Date().getFullYear();
