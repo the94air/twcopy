@@ -11,7 +11,8 @@
                 <p class="text-sm text-gray-700 mb-4">Useful for doing design or front-end work.</p>
                 <div>
                   <button class="inline-block text-sm text-white font-semibold focus:outline-none leading-tight rounded-full select-none align-middle whitespace-no-wrap px-4 py-2 mr-2 cursor-pointer" :class="version === 1 ? 'bg-teal-500 hover:bg-teal-600 hover:bg-opacity-75 focus:bg-teal-600 focus:bg-opacity-75' : 'bg-blueGray-300 hover:bg-blueGray-400 hover:bg-opacity-50 focus:bg-blueGray-400 focus:bg-opacity-50 text-gray-600'" @click="version = 1">v1</button>
-                  <button class="inline-block text-sm text-white font-semibold focus:outline-none leading-tight rounded-full select-none align-middle whitespace-no-wrap px-4 py-2 cursor-pointer" :class="version === 2 ? 'bg-teal-500 hover:bg-teal-600 hover:bg-opacity-75 focus:bg-teal-600 focus:bg-opacity-75' : 'bg-blueGray-300 hover:bg-blueGray-400 hover:bg-opacity-50 focus:bg-blueGray-400 focus:bg-opacity-50 text-gray-600'" @click="version = 2">v2</button>
+                  <button class="inline-block text-sm text-white font-semibold focus:outline-none leading-tight rounded-full select-none align-middle whitespace-no-wrap px-4 py-2 mr-2 cursor-pointer" :class="version === 2 ? 'bg-teal-500 hover:bg-teal-600 hover:bg-opacity-75 focus:bg-teal-600 focus:bg-opacity-75' : 'bg-blueGray-300 hover:bg-blueGray-400 hover:bg-opacity-50 focus:bg-blueGray-400 focus:bg-opacity-50 text-gray-600'" @click="version = 2">v2</button>
+                  <button class="inline-block text-sm text-white font-semibold focus:outline-none leading-tight rounded-full select-none align-middle whitespace-no-wrap px-4 py-2 cursor-pointer" :class="version === 3 ? 'bg-teal-500 hover:bg-teal-600 hover:bg-opacity-75 focus:bg-teal-600 focus:bg-opacity-75' : 'bg-blueGray-300 hover:bg-blueGray-400 hover:bg-opacity-50 focus:bg-blueGray-400 focus:bg-opacity-50 text-gray-600'" @click="version = 3">v3</button>
                 </div>
               </div>
               <div class="mb-6">
@@ -115,7 +116,7 @@ export default {
   },
   computed: {
     getConfigs() {
-      return this.version === 1 ? this.configs.v1 : this.configs.v2;
+      return this.configs[`v${this.version}`]; // this.version === 1 ? this.configs.v1 : this.configs.v2;
     },
     date() {
       return new Date().getFullYear();
