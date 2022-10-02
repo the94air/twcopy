@@ -110,7 +110,7 @@ import configs from '@/assets/json/configs.json';
 export default {
   data() {
     return {
-      version: 2,
+      version: 3,
       configs
     }
   },
