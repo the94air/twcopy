@@ -20,4 +20,4 @@ $ npm run generate
 ```
 
 ## License
-[MIT](https://github.com/the94air/twcopy/blob/main/LICENSE) Copyright (c) Abdalla Arbab
+[MIT](https://github.com/the94air/twcopy/blob/main/LICENSE) Copyright (c) Abdalla Arbab and [contributors](https://github.com/the94air/twcopy/graphs/contributors)
